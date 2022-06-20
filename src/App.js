@@ -92,8 +92,8 @@ function reducer(state, { type, payload }) {
   }
 }
 function evalute({ currentOperand, previousOperand, operation }) {
-  const prev = parseInt(previousOperand);
-  const current = parseInt(currentOperand);
+  const prev = parseFloat(previousOperand);
+  const current = parseFloat(currentOperand);
   if (isNaN(prev) || isNaN(current)) {
     return "";
   }
